@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Buku Baru</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="navbar">
+            <h1>Toko Buku Baru</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#produk">Produk</a></li>
+                    <li><a href="#tentang-kami">Tentang Kami</a></li>
+                    <li><a href="#payment">Pembayaran</a></li>
+                </ul>
+            </nav>
+            <div class="cart">
+                <span class=""></span>
+                <span id=""></span>
+                <span class="cart-icon">🛒</span>
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Selamat Datang di Toko Buku Baru</h1>
+        <p>Koleksi Buku Berkualitas untuk Semua Usia.</p>
+        <a href="#produk" class="btn">Lihat Koleksi</a>
+    </section>
+
+    <div class="search-container">
+    <input type="text" id="search-input" placeholder="Cari buku...">
+    <button id="search-button">Cari</button>
+</div>
+
+    <!-- Produk Section -->
+    <section id="produk">
+        <h2>Koleksi Buku Kami</h2>
+        <div class="produk-list"></div>
+
+
+    <!-- Keranjang Belanja -->
+    <section id="keranjang">
+        <h2>Keranjang Belanja</h2>
+        <div id="cart-items">
+            <p>Keranjang Anda kosong.</p>
+        </div>
+        <p>Total Harga: <span id="total-price">Rp 0</span></p>
+        <button id="checkout-button">Checkout</button>
+    </section>
+
+    <!-- Tentang Kami -->
+    <section id="tentang-kami">
+        <h2>Tentang Kami</h2>
+        <div class="about-content">
+            <img src="tentang-kami.png" alt="Toko Buku Baru" class="about-img">
+            <p>Toko Buku Baru menyediakan berbagai macam buku untuk segala usia, dari fiksi hingga edukasi, dengan harga terjangkau dan pelayanan terbaik. Kami percaya bahwa membaca dapat membuka wawasan dan memberikan pengalaman yang tak ternilai. Kami berkomitmen untuk memberikan pelayanan terbaik serta produk-produk berkualitas yang akan memperkaya pengetahuan Anda.</p>
+        </div>
+    </section>
+
+    <!-- Payment Section -->
+    <section id="payment">
+        <h2>Metode Pembayaran</h2>
+        <form id="payment-form">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" placeholder="Masukkan nama lengkap" required>
+            <label for="address">Alamat Pengiriman:</label>
+            <input type="text" id="address" placeholder="Masukkan alamat lengkap" required></textarea>
+            <label for="phone">Nomor Telepon:</label>
+            <input type="text" id="phone" placeholder="Masukkan nomor telepon" required>
+            <label for="payment-method">Metode Pembayaran:</label>
+            <select id="payment-method">
+                <option value="ewallet">E-Wallet</option>
+                <option value="bank">Transfer Bank</option>
+            </select>
+            <button type="submit">Bayar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Toko Buku Baru. Designed by Zahra Nabila.</p>
+    </footer>
+</body>
+</html>
